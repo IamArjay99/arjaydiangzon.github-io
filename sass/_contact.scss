@@ -43,13 +43,9 @@ section.contact {
 
                 .form-control {
                     width: 40vw;
-                }
-
-                input {
-                    height: 2.3rem;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
+                    color: #363030c9;
                     padding: 0.5rem;
-                    margin: 0.3rem 0rem;
                     border: 1px solid rgba(50, 51, 50, 0.39);
                     font-family: "Hind Siliguri", sans-serif;
 
@@ -59,18 +55,15 @@ section.contact {
                     }
                 }
 
+                input {
+                    height: 2.3rem;
+                    margin: 0.3rem 0rem;
+                }
+
                 textarea {
                     resize: none;
-                    font-size: 1.2rem;
-                    padding: 0.5rem;
                     margin: 0.5rem 0rem;
-                    border: 1px solid rgba(50, 51, 50, 0.39);
-                    font-family: "Abel", sans-serif;
-
-                    &:focus {
-                        outline: none;
-                        border: 1px solid rgba(14, 191, 223, 0.925);
-                    }
+                    // font-family: "Abel", sans-serif;
                 }
 
                 .error-feedback {

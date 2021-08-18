@@ -54,10 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    $("#btn-submit").on("click", function (e) {
+    $(document).on("click", "#btn-submit", function(e) {
         e.preventDefault();
-        const name = $("#name").val();
-        const email = $("#email").val();
+        const name    = $("#name").val();
+        const email   = $("#email").val();
         const message = $("#message").val();
 
         if (checkName(name) && checkEmail(email) && checkMessage(message)) {
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    $("#btn-clear").on("click", function (e) {
+    $(document).on("click", "#btn-clear", function (e) {
         e.preventDefault();
         const arrTags = ["name", "email", "message"];
         arrTags.forEach((tag) => {
@@ -97,19 +97,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Keyup function, avoid displaying error when the user start to type
-    $("#name").keyup(() => {
+    $(document).on("keyup", "#name", () => {
         $("#name").css({
             border: "1px solid rgba(50, 51, 50, 0.39)",
         });
         $(".error-name").removeClass("error-feedback").text("");
     });
-    $("#email").keyup(() => {
+    $(document).on("keyup", "#email", () => {
         $("#email").css({
             border: "1px solid rgba(50, 51, 50, 0.39)",
         });
         $(".error-email").removeClass("error-feedback").text("");
     });
-    $("#message").keyup(() => {
+    $(document).on("keyup", "#message", () => {
         $("#message").css({
             border: "1px solid rgba(50, 51, 50, 0.39)",
         });
